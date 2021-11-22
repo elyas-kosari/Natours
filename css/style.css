@@ -1,59 +1,19 @@
-/* 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
 
-  ----- 01 TYPOGRAPHY SYSTEM
-  - Font Size (px)
-  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
 
-  - Font Weights:
-  Default: 400
-  Medium: 500
-  Semi-Bold: 600
-  Bold: 700
-
-
-  - Line Height:
-  Default: 1
-  Small: 1.05
-  Medium: 1.2
-  Paragraph Default: 1.6
-  Large: 1.8
-
-  - Letter spacing:
-  -0.5px
-  0.75px
-
-  ----- 02 COLORS
-  https://maketintsandshades.com/
-
-  Light green: #7ed56f
-  Medium green: #55c57a
-  Dark green: #28b485
-
-  - Primary:
-
-  - Tints: 
-  
-  - Shades: 
-
-  - Accent:
-
-  - Greys: #777, #555, #333, #6f6f6f (lightest grey allowed on #fdf2e9)
-
-  03 IMAGES
-  http://unsplash.com
-  http://uifaces.co
-
-  ----- 04 SHADOWS
-
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-
-  ----- 05 BORDER RADIUS
-  Default: 10px
-
-  ----- 06 WHITESPACE
-  - Spacing (px)
-  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
 *,
 *::after,
 *::before {
@@ -72,28 +32,10 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  line-height: 1;
+  line-height: 1.7;
   font-family: 400;
   color: #777;
   padding: 2rem; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-  position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
 
 .heading-primary {
   color: #fff;
@@ -112,22 +54,6 @@ body {
     font-weight: 700;
     letter-spacing: 1.7rem;
     animation: moveInRight 1s ease-out; }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0rem); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0rem); } }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -149,3 +75,21 @@ body {
 .btn--primary {
   background-color: #fff;
   color: #777; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  position: relative; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
