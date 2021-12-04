@@ -4,6 +4,8 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
+$color-grey-light-1: #f7f7f7;
+
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
@@ -12,3 +14,10 @@ $color-black: #000;
 $grid-width: 114rem;
 $gap-row: 8rem;
 $gap-column: 6rem;
+
+// Font
+$default-font-size: 1.6rem;
+
+// Shadows
+$shadow-hover: 0 1rem 2rem rgba($color-black, 0.2);
+$shadow-active: 0 0.5rem 1rem rgba($color-black, 0.2); ;
